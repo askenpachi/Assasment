@@ -1,0 +1,321 @@
+/* jangan di ubah */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Montserrat:wght@100;200;300;400;500;600;700;900&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+
+
+*, html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.container{
+    background: linear-gradient(45deg, rgba(55, 104, 230, 0.689), rgba(111, 239, 216, 0.617)   );
+    background-size: 400% 400%;
+    animation: gradientAnimation 19s ease infinite;
+    height: 100vh;
+    
+}
+
+@keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.container header{
+    margin-left:25px;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 5px 0;
+   
+
+}
+
+.kotak{
+    height: 80vh;
+    background-color: #f3f3f300;
+    display: flex;
+    gap: 10px;
+
+}
+
+.kiri{
+    display: flex;
+    flex-direction: column;
+}
+
+.kiri button{
+    margin: 0.5em 10px 0.5em 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    /* background: linear-gradient(45deg, blue, aqua);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite; */
+    outline: none;
+    border: none;
+}
+
+.satu{
+    margin: 0.5em 10px 0.5em 10px;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    /* background: linear-gradient(45deg, pink, rgba(126, 242, 242, 0.769));
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite; */
+    background-color: rgb(31, 17, 223);
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+     /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+}
+
+.satu option{
+    padding: 10px;
+    background-color: white;
+    color: black;
+}
+
+.dua{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    /* background: linear-gradient(45deg, pink, rgba(126, 242, 242, 0.769));
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite; */
+    background-color:  rgb(31, 17, 223);
+    border-radius: 10px;
+}
+
+.belanja{
+    margin-left: 5px;
+    height: 40vh;
+    border: 1px solid black;
+    width: 390px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: white;
+    
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+}
+
+.belanja .barang{
+    border: 2.5px solid rgb(14, 15, 15);
+    display: flex;
+    justify-content: space-around;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.barang .normal{
+    font-size: smaller;
+
+}
+
+.barang img{
+    max-width: 20px;
+}
+
+.barang button{
+    padding: 0;
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+}
+
+.barang button span{
+    font-size: 30px;
+}
+
+.jajan{
+
+    padding: 1em 1em 0 1em;
+    color: black;
+    font-size: 12px;
+    background-color: white;
+    margin: 6px;
+    width: 100%;
+    border-radius: 18px;
+}
+
+.pay{
+    font-size: 12px;
+    padding: 1px;
+    animation: gradientAnimation 15s ease infinite;
+    color: black !important;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.kanan{
+    width: 1200px;
+    margin-right: 5px;
+    margin-top: 90px;
+}
+
+.kanan  nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    background-color: rgba(0, 0, 0, 0);
+    align-items: center;
+}
+
+.kanan nav .nav_kanan span{
+    font-size: 27px;
+}
+
+.kanan nav .nav_kanan{
+    display: flex;
+    align-items: center;
+}
+
+.kanan nav .nav_kanan input{
+    padding: 5px
+}
+
+.cari{
+    position: relative;
+    cursor: pointer;
+}
+
+
+.kanan section {
+    margin-top: 60px;
+    border: 2.5px;
+    height:65vh;
+    width: 85%; 
+    overflow-y: scroll;
+    background-color: white;
+    border-radius: 20px;
+    margin: 0 auto;  
+    padding: 20px; 
+    box-shadow:  0px 0px 10px rgba(0, 0, 0, 0.8);
+  }
+  
+
+.kanan section .isi .foto img{
+    width: 65%;
+    margin: 8px;
+    height: 10vh;
+    border-radius: 14px;
+    border: 1px solid #bbb;
+    
+}
+
+.kanan section .isi {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    margin: 20px;
+    border: 2px;
+    width: 130px;
+    height: 133px;
+    text-align: center;
+    border-radius: 18px;
+    float: left;
+    
+  }
+  
+  
+  .kanan section .isi:hover {
+    transform: translateY(-5px); 
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+
+.kanan section .isi p{
+    font-size: 12px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-family: Georgia, 'Merriweather', Times, serif;
+    color: rgb(77, 71, 71);
+}
+
+.kanan section .isi h1{
+    font-size: 15px;
+    width: 100%;
+    font-family: 'Times New Roman', serif;
+    color: black;
+}
+
+
+.payment{
+    height: 8vh;
+    background-color: rgba(0, 0, 0, 0);
+    position: relative;
+}
+
+.payment button{
+    position: absolute;
+    right: 20px;
+    padding: 10px 2%;
+    gap: 10px;
+    outline: none;
+    border: none;
+    background-color: rgb(31, 17, 223);
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+   
+    
+    
+}
+
+.payment button:hover{
+    transform: translateY(-5px); 
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.container footer{
+    color: white;
+    padding-left: 10px;
+    padding-top: 5px;
+    font-size: small;
+}
+
+
+
+
+html::-webkit-scrollbar{
+    display: none;
+}
+
+section::-webkit-scrollbar{
+    display: none;
+}
+
+@media print {
+    body {
+      visibility: hidden;
+    }
+    #section-to-print {
+      visibility: visible;
+      position: relative;
+      left: 0;
+      top: 0;
+    }
+  }
+
+
+  
